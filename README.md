@@ -53,7 +53,7 @@ Run the program by following the command line.
 scrapy crawl dse
 ```
 
-The output files will be in the output directory. If the program runs successfully, 3 types of output files will be generated. ```news_archive.csv```, ```company_listing.csv``` and ```combine_data.csv```
+The output files will be in the ```output``` directory. If the program runs successfully, 3 types of output files will be generated. ```news_archive.csv```, ```company_listing.csv``` and ```combine_data.csv```
 
 **news_archive.csv** will be contained:
 * Trading Code

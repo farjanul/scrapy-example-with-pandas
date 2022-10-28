@@ -1,9 +1,6 @@
 ### User ###
 .vscode
 .idea
-output/**
-!output/**/
-!output/**/.gitkeep
 
 # Byte-compiled / optimized / DLL files
 *.py[cod]
