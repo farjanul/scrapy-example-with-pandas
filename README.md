@@ -1,7 +1,7 @@
 # Scrapy Framework
 ## Real example for scraping with ```Pandas``` from a website of [Dhaka Stock Exchange](https://www.dse.com.bd)
 
-First of all, you need to know about the technology which are using for built this program.
+First of all, we need to know about the technology which are using for built this program.
 
 ## Built With
 * [Python](https://www.python.org) - Programming language
@@ -9,14 +9,14 @@ First of all, you need to know about the technology which are using for built th
 * [Pandas](https://pandas.pydata.org) - Powerful data structures for data analysis, time series, and statistics.
 
 ## Goal of the Project
-In the first link there is a dropdown of Trading Code List (Search by Trading Code) which shows all the Company enlisted. You can select a Trading Code and see all the latest news of the company. In the second lisk there is a list of all companies with their Trading Code.
+In the first link there is a dropdown of Trading Code List (Search by Trading Code) which shows all the Company enlisted. We can select a Trading Code and see all the latest news of the company. In the second lisk there is a list of all companies with their Trading Code.
 
 Use the following link of Bangladesh Stock exchange
 * https://www.dse.com.bd/news_archive.php
 * https://www.dse.com.bd/company_listing.php
 
 ### Mission and Vision
-You have to use the scrapy framework for crawling and python generators for data processing. Your task would be to crawl the first ```250``` companies' news from the first link and take the company names from the second link. Out of the crawled data prepare a separate csv file.
+We use the scrapy framework for crawling and python generators for data processing. Your task would be to crawl the first ```250``` companies' news from the first link and take the company names from the second link. Out of the crawled data prepare a separate csv file.
 
 The csv schema would be:
 * Trading Code
