@@ -55,18 +55,18 @@ scrapy crawl dse
 
 The output files will be in the output directory. If the program runs successfully, 3 types of output files will be generated. ```news_archive.csv```, ```company_listing.csv``` and ```combine_data.csv```
 
-**news_archive.csv** will be containing:
+**news_archive.csv** will be contained:
 * Trading Code
 * News Title
 * News
 * Post Date
 
-**company_listing.csv** will be containing:
+**company_listing.csv** will be contained:
 * Trading Code
 * Company Name
 
 ### Final and analysis output file
-**combine_data.csv** is final output file which containing the expected data for each company:
+**combine_data.csv** is the final output file, which contained the expected data for each company:
 * Trading Code
 * Company Name
 * News Title
