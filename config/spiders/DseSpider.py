@@ -6,6 +6,10 @@ from config.utils.utils import name_formatting
 
 
 class DSESpider(scrapy.Spider):
+    """
+    Scrapy spider class for scraping data and processing for analysis.
+    """
+
     name = "dse"
     news_csv = CSVService(constants.NEWS_ARCHIVE_FILE_PATH, constants.NEWS_COLUMN)
     company_csv = CSVService(constants.COMPANY_LISTING_FILE_PATH, constants.COMPANY_INFO_COLUMN)
