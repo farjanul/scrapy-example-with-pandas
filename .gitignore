@@ -1,6 +1,7 @@
 ### User ###
 .vscode
 .idea
+output/*.csv
 
 # Byte-compiled / optimized / DLL files
 *.py[cod]
