@@ -2,7 +2,7 @@ BASE_URL = "https://www.dse.com.bd"
 COMPANY_LISTING_ENDPOINT = "/company_listing.php"
 NEWS_ARCHIVE_ENDPOINT = "/news_archive.php"
 NEWS_LISTING_ENDPOINT = "/old_news.php?inst={sel}&criteria=3&archive=news"
-CRAWLING_LIMIT = 20
+CRAWLING_LIMIT = 250
 
 NEWS_ARCHIVE_FILE_PATH = "output/news_archive.csv"
 COMPANY_LISTING_FILE_PATH = "output/company_listing.csv"

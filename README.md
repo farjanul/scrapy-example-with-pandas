@@ -16,7 +16,7 @@ Use the following link of Bangladesh Stock exchange
 * https://www.dse.com.bd/company_listing.php
 
 ### Mission and Vision
-You have to use the scrapy framework for crawling and python generators for data processings. Your task would be to crawl the first 250 companies' news from the first link and take the company names from the second link. Out of the crawled data prepare a separate csv file.
+You have to use the scrapy framework for crawling and python generators for data processing. Your task would be to crawl the first ```250``` companies' news from the first link and take the company names from the second link. Out of the crawled data prepare a separate csv file.
 
 The csv schema would be:
 * Trading Code

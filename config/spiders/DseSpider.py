@@ -19,10 +19,9 @@ class DSESpider(scrapy.Spider):
         yield scrapy.Request('%s%s' % (constants.BASE_URL, constants.COMPANY_LISTING_ENDPOINT),
                              callback=self.company_parse)
 
-        for idx, sel in enumerate(response.xpath(constants.SELECT_XPATH).getall()):
-            if 0 < idx <= constants.CRAWLING_LIMIT + 1:
-                yield scrapy.Request('%s%s' % (constants.BASE_URL, constants.NEWS_LISTING_ENDPOINT.format(sel=sel)),
-                                     callback=self.news_parse, meta={"csvFile": self.news_csv})
+        for item in response.xpath(constants.SELECT_XPATH).getall()[1:constants.CRAWLING_LIMIT+1]:
+            yield scrapy.Request('%s%s' % (constants.BASE_URL, constants.NEWS_LISTING_ENDPOINT.format(sel=item)),
+                                 callback=self.news_parse, meta={"csvFile": self.news_csv})
 
     def close(self, spider, reason):
         self.news_csv.close()
@@ -58,9 +57,8 @@ class DSESpider(scrapy.Spider):
                     constants.COMPANY_INFO_COLUMN[1]: name_formatting(company_name[idx])
                 })
 
-            for index, i in enumerate(companyInfoList):
-                if index <= constants.CRAWLING_LIMIT:
-                    self.company_csv.write(i)
+        for item in companyInfoList[0:constants.CRAWLING_LIMIT]:
+            self.company_csv.write(item)
 
     @staticmethod
     def merged_two_csv_file():
