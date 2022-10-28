@@ -2,6 +2,7 @@
 .vscode
 .idea
 output/*.csv
+output/.gitkeep
 
 # Byte-compiled / optimized / DLL files
 *.py[cod]
