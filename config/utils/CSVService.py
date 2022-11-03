@@ -31,11 +31,6 @@ class CSVService:
         """Get the size of the CSV file"""
         return os.path.getsize(self.filename)
 
-    def to_dict(self) -> list[Any]:
-        """Get dict from the CSV file"""
-        lst = [*csv.DictReader(open(self.filename, 'r'))]
-        return lst
-
     @staticmethod
     def check_directory():
         """Check the directory, if exist otherwise create a directory."""
